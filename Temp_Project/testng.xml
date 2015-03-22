@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ResellerSuite" parallel="none">
+<listeners>
+  <listener class-name="org.uncommons.reportng.HTMLReporter" />
+  <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners> 
+			
+	  <test name="Link urls Test">
+	    <classes>
+	      <class name="TestNGProject.ResellerUrlTesting">
+		      <methods>
+		        <include name="homePageUrls" />
+		        <include name="loginToReseller" />
+		        <include name="resellerPageUrls" />
+		        <include name="resellerLogout" />
+		      </methods>
+		    </class>  
+	     </classes>
+	  </test> <!-- Link urls Test -->
+	 <test name="Reseller test">
+	    <classes>
+	      <class name="TestNGProject.Reseller">
+		      <methods>
+		        <include name="loginToReseller" />
+		        <include name="inviteCustomer" />
+		        <include name="acceptInviteCustomer" />
+		        <include name="addMoreSeat" />
+		        <include name="managedby" />
+		        <include name="changeBreadcrumb" />
+		        <include name="importCSVFile" />
+		        <include name="importTextFile" />
+		        <include name="addSalesRep" />
+		      </methods>
+		    </class>
+	     </classes>
+	  </test> <!-- Reseller test -->
+</suite> <!-- ResellerSuite -->
