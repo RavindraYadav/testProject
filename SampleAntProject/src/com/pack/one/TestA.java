@@ -23,6 +23,7 @@ public class TestA {
 	@Test
 	public void testOne() {
 		System.out.println("helloA");
+		System.out.println("Hello from Test A function One");
 	}
 	
 	@Test
