@@ -33,6 +33,8 @@ public class TestA {
 	@AfterClass
 	public void tearDown() {
 		System.out.println("*** End of class***");
+		driver.get("https://www.facebook.com");
+		System.out.println("Opened Facebook");
 		driver.quit();
 	}
 }
