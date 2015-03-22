@@ -13,7 +13,7 @@ public class TestA {
 	WebDriver driver;
 	@BeforeClass
 	public void setUp() {
-		System.out.println("*** In class - Test B ***");
+		System.out.println("*** In class - Test A ***");
 		File f=new File("F:\\CloneProject\\NewTest\\SampleAntProject\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", f.getAbsolutePath());
 		driver=new ChromeDriver();
@@ -22,12 +22,12 @@ public class TestA {
 
 	@Test
 	public void testOne() {
-		System.out.println("hello");
+		System.out.println("helloA");
 	}
 	
 	@Test
 	public void testTwo() {
-		System.out.println("hello");
+		System.out.println("helloA2");
 	}
 	
 	@AfterClass
