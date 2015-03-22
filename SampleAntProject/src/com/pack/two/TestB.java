@@ -27,7 +27,7 @@ public class TestB {
 	
 	@Test
 	public void testTwo() {
-		System.out.println("hello");
+		System.out.println("hello2");
 	}
 	
 	@AfterClass
