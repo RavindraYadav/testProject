@@ -33,5 +33,6 @@ public class TestB {
 	@AfterClass
 	public void tearDown() {
 		System.out.println("*** End of class***");
+		driver.quit();
 	}
 }
