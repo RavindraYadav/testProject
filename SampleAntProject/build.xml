@@ -13,7 +13,7 @@
 	<path id="classpath">
 		<pathelement location="${bin}" />
 		 <!--pathelement location="C:/Users/TukTuk/Downloads/Jars/selenium-server-standalone-2.40.0.jar"/-->
-		<pathelement location="${basedir}/selenium-server-standalone-2.40.0.jar"/>
+		<pathelement location="C:/Users/admin/Downloads/selenium-server-standalone-2.40.0.jar"/>
 		<fileset dir="${lib}">
 			<include name="*.jar" />
 		</fileset>
